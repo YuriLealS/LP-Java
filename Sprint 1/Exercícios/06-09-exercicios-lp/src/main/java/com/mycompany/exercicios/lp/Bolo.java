@@ -6,7 +6,9 @@ public class Bolo {
     Integer quantidadeVendida;
     Double faturado = 0.0;
     void comprarBolo(Integer quantidadeDesejada){
-        if (quantidadeVendida >= 100) {
+    Integer validacao = 0;
+    validacao = quantidadeDesejada + quantidadeVendida;
+        if (validacao >= 100) {
             System.out.println("Seu pedido ultrapassou nosso limite diário para esse bolo.");
         }else if (valor < 30.00 || valor > 50.00) {
             System.out.println("Valor inválido");

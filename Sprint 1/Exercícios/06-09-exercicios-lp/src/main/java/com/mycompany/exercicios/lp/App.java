@@ -22,7 +22,7 @@ public class App {
 
 //        Comprar certo
         for (int i = 1; i <= 5; i++) {
-            bolo1.comprarBolo(5);
+            bolo1.comprarBolo(30);
         }
         bolo1.exibirRelatorio();
         System.out.println("\n");
