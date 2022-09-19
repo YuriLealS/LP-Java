@@ -1,4 +1,4 @@
-package exercicios.pkg23.pkg08;
+package com.mycompany.exercicios.lp;
 
 import java.util.Scanner;
 
@@ -8,10 +8,9 @@ public class ClassesSociais {
         Metodo met = new Metodo();
          System.out.println("Informe sua renda: ");
          Double renda = leitor.nextDouble();
-         System.out.println(renda);
          Double qtdSalarios = met.qtdSalMin(renda);
-         System.out.println(String.format("Você recebe em média: %.2f salários mínimos", qtdSalarios));
+         System.out.println(String.format("Você recebe em média: %.1f salários mínimos", qtdSalarios));
          String resultado = met.classes(qtdSalarios);
          System.out.println("Você pertence a: " + resultado);
         }
-    }
+}
